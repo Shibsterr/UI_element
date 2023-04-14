@@ -6,7 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class AinuParsledzejs : MonoBehaviour {
 	public void UzSakumu(){
-		SceneManager.LoadScene (0, LoadSceneMode.Single);		//vari ari ainas nosaukumu		
+		SceneManager.LoadScene (0, LoadSceneMode.Single);		//vari ari ainas nosaukumu	samainot 0 uz ta vardu	
 	}
 
+	public void UzUI(){
+		SceneManager.LoadScene(1, LoadSceneMode.Single);
+	}
+
+	public void Apturet()
+	{
+		Application.Quit ();
+	}
 }
