@@ -6,7 +6,7 @@ public class VirtuluGenerators : MonoBehaviour {
 	public GameObject[] virtuluSagataves;
 	public float laikaIntervals = 0.9f;
 	float minPoz, maxPoz;
-	public Transform vecaks;
+	private Transform vecaks;
 
 
 
@@ -28,8 +28,8 @@ public class VirtuluGenerators : MonoBehaviour {
 	{
 		while (true)
 		{
-            minPoz = vecaks.position.x - 50;
-            maxPoz = vecaks.position.x + 50;
+            minPoz = vecaks.position.x - 30;
+            maxPoz = vecaks.position.x + 30;
 			var cipars = Random.Range(minPoz, maxPoz);
 
 			var pozicija = new Vector3(cipars, transform.position.y);
